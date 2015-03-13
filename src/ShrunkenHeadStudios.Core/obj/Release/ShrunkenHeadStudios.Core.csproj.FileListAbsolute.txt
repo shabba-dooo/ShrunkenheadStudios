@@ -1,0 +1,17 @@
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\ShrunkenHeadStudios.Core.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\ShrunkenHeadStudios.Core.pdb
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\FluentNHibernate.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Iesi.Collections.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Newtonsoft.Json.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\NHibernate.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Ninject.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Ninject.Web.Common.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\FluentNHibernate.pdb
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\FluentNHibernate.xml
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Iesi.Collections.xml
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Newtonsoft.Json.xml
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\NHibernate.xml
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Ninject.xml
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\bin\Release\Ninject.Web.Common.xml
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\obj\Release\ShrunkenHeadStudios.Core.dll
+C:\Users\cashton\Documents\Projects\ShrunkenHeadStudios\src\ShrunkenHeadStudios.Core\obj\Release\ShrunkenHeadStudios.Core.pdb

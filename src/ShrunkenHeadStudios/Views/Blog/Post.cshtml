@@ -1,0 +1,25 @@
+﻿@model  ShrunkenHeadStudios.Core.Objects.Post
+
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.Description = Model.Meta;
+}
+
+<figure class="separator">
+    <img src="~/_includes/images/blog/@Model.BannerImage" />
+</figure>
+
+<article class="blog-post">
+    <h2>@Html.Raw(Model.Title)</h2>
+    <p class="entry-published-date">@Model.PostedOn.ToLongDateString() | Category: @Html.CategoryLink(Model.Category) | <a href="@string.Format("http://{0}.co.uk{1}{2}", System.Configuration.ConfigurationManager.AppSettings["Domain"], Model.Href(Url), "#disqus_thread")">Comments</a></p>
+    @Html.Raw(Model.Description)
+    <ul class="tags">
+       <li>Tags:</li> 
+        @Helpers.Tags(Html, Model.Tags) 
+    </ul>
+
+     @Html.ActionLink("← Previous posts", "posts", "blog")
+
+    @* INCLUDE DISQUS *@
+    @Html.Partial("_Disqus")
+</article>

@@ -1,0 +1,38 @@
+﻿@model ShrunkenHeadStudios.Models.LoginModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Administrator login panel";
+    ViewBag.Description = "Administrator login panel";
+}
+
+<div class="login">
+    <h2>Administrator login</h2>
+    <!-- Login form -->
+    @using (Html.BeginForm())
+    {
+        <p>
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName)
+            @Html.ValidationMessageFor(m => m.UserName)
+        </p>
+
+        <p>
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </p>
+
+        @Html.Hidden("ReturnUrl")
+        <!--Generates hidden field and cookie !-->
+        @Html.AntiForgeryToken()
+
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+    }
+
+    <!-- Validation message -->
+    @Html.ValidationSummary(true)
+</div>
+

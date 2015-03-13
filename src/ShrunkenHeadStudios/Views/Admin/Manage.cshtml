@@ -1,0 +1,99 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shrunken Head Studios :: Admin control panel</title>
+    <meta name="description" content="Shrunken Head Studios - The creative outlet of Callum Ashton">
+    <meta name="author" content="Callum Ashton">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-57x57.png")">
+    <link rel="apple-touch-icon" sizes="60x60" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-60x60.png")">
+    <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-72x72.png")">
+    <link rel="apple-touch-icon" sizes="76x76" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-76x76.png")">
+    <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-114x114.png")">
+    <link rel="apple-touch-icon" sizes="120x120" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-120x120.png")">
+    <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-144x144.png")">
+    <link rel="apple-touch-icon" sizes="152x152" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-152x152.png")">
+    <link rel="apple-touch-icon" sizes="180x180" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-180x180.png")">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/favicon-32x32.png")" sizes="32x32">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/android-chrome-192x192.png")" sizes="192x192">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/favicon-96x96.png")" sizes="96x96">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/favicon-16x16.png")" sizes="16x16">
+    <link rel="manifest" href="@Url.Content("~/_includes/images/icons/manifest.json")">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="@Url.Content("~/_includes/images/icons/mstile-144x144.png")">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="@Url.Content("~/_includes/css/admin.css")" />
+
+    <!-- jquery library -->
+    <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+
+    <!-- jquery ui library -->
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <link href="@Url.Content("~/_includes/css/jquery-ui-1.11.3.custom/jquery-ui.min.css")" rel="stylesheet" />
+
+    <!-- jqgrid -->
+    <link href="@Url.Content("~/_includes/Scripts/jquery.jqGrid-4.7.1/css/ui.jqgrid.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/_includes/Scripts/jquery.jqGrid-4.7.1/js/jquery.jqGrid.min.js")"></script>
+    <script src="@Url.Content("~/_includes/Scripts/jquery.jqGrid-4.7.1/js/i18n/grid.locale-en.js")"></script>
+
+    <!-- tinyMCE -->
+    <script src="@Url.Content("~/_includes/Scripts/tiny_mce/tiny_mce.js")"></script>
+
+    <!--Generic JavaScript -->
+    <script src="@Url.Content("~/_includes/Scripts/admin.js")"></script>
+
+</head>
+
+<body>
+
+    <article class="login-header">
+        <h2>Hello Callum.</h2>
+        <!-- logout link -->
+        <p class="logout">@Html.ActionLink("logout", "Logout")</p>
+    </article>
+
+    <!-- tab control -->
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-posts">Posts</a></li>
+            <li><a href="#tab-cats">Categories</a></li>
+            <li><a href="#tab-tags">Tags</a></li>
+        </ul>
+
+        <!-- Posts grid -->
+        <div id="tab-posts" class="tab">
+            <table id="tablePosts" class="grid">
+            </table>
+            <div id="pagerPosts" class="pager">
+            </div>
+        </div>
+
+        <!-- Categories grid -->
+        <div id="tab-cats" class="tab">
+            <table id="tableCats" class="grid">
+            </table>
+            <div id="pagerCats" class="pager">
+            </div>
+        </div>
+
+        <!-- Tags grid -->
+        <div id="tab-tags" class="tab">
+            <table id="tableTags" class="grid">
+            </table>
+            <div id="pagerTags" class="pager">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

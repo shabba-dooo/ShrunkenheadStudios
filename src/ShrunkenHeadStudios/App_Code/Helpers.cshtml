@@ -1,0 +1,9 @@
+﻿@helper Tags(System.Web.Mvc.HtmlHelper htmlHelper, IList<ShrunkenHeadStudios.Core.Objects.Tag> tags)
+{
+    foreach(var tag in tags)
+    {
+        <li>
+            @ShrunkenHeadStudios.ActionLinkExtensions.TagLink(htmlHelper, tag)
+        </li>
+    }
+}

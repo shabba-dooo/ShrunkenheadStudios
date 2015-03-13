@@ -1,0 +1,21 @@
+﻿@model ShrunkenHeadStudios.Models.ListViewModel
+
+@if (Model.Posts.Count > 0)
+{
+    <article class="blog-header">
+    <h2>@ViewBag.Title</h2>
+    <p>@Model.TotalPosts Post(s) found</p>
+    @Html.Partial("_Pager", Model)
+    </article>
+    
+    foreach (var post in Model.Posts)
+    {
+    @Html.Partial("_PostTemplate", post)
+    }
+}
+else
+{
+    <article class="blog-header">
+        <h2>No posts found!</h2>
+    </article>
+}

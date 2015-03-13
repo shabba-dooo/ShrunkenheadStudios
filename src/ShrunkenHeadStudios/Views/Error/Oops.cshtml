@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Oops! Looks like you've encontered an error! - " + @Response.StatusDescription;
+    ViewBag.Description = "Oops! Looks like you've encontered an error! - " + @Response.StatusDescription;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="error">
+    <h2>Oh dear! This is embarrassing!</h2>
+    <p>It looks as though you've encountered a @Response.StatusCode error, probably caused by some naughty code!</p>
+    <p>Please accept my apologies and preserve my dignity by navigating away from this page...I won't tell anyone if you don't!</p>
+</section>

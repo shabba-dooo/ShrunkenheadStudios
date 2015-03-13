@@ -1,0 +1,19 @@
+﻿@model ShrunkenHeadStudios.Core.Objects.Post
+
+<figure class="separator">
+    <img src="~/_includes/images/blog/@Model.BannerImage" />
+</figure>
+
+<article class="blog-post">
+    <h2>@Html.PostLink(Model)</h2>
+    <p class="entry-published-date">@Model.PostedOn.ToLongDateString() | Category: @Html.CategoryLink(Model.Category) | <a href="@string.Format("http://{0}.co.uk{1}{2}", System.Configuration.ConfigurationManager.AppSettings["Domain"], Model.Href(Url), "#disqus_thread")">Comments</a></p>
+    @Html.Raw(Model.ShortDescription)
+    
+    <ul class="tags">
+        <li>Tags:</li>
+        @Helpers.Tags(Html, Model.Tags)
+    </ul>
+
+    @Html.ActionLink("View post →", "post", "blog", new { year = Model.PostedOn.Year, month = Model.PostedOn.Month, day = Model.PostedOn.Day, title = Model.UrlSlug }, new { title = "View post →" })
+
+</article>

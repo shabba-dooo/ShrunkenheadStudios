@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Shrunken Head Studios :: @ViewBag.Title</title>
+	<meta name="description" content="Shrunken Head Studios - @ViewBag.Description">
+	<meta name="author" content="Callum Ashton">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-57x57.png")">
+    <link rel="apple-touch-icon" sizes="60x60" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-60x60.png")">
+    <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-72x72.png")">
+    <link rel="apple-touch-icon" sizes="76x76" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-76x76.png")">
+    <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-114x114.png")">
+    <link rel="apple-touch-icon" sizes="120x120" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-120x120.png")">
+    <link rel="apple-touch-icon" sizes="144x144" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-144x144.png")">
+    <link rel="apple-touch-icon" sizes="152x152" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-152x152.png")">
+    <link rel="apple-touch-icon" sizes="180x180" href="@Url.Content("~/_includes/images/icons/apple-touch-icon-180x180.png")">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/favicon-32x32.png")" sizes="32x32">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/android-chrome-192x192.png")" sizes="192x192">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/favicon-96x96.png")" sizes="96x96">
+    <link rel="icon" type="image/png" href="@Url.Content("~/_includes/images/icons/favicon-16x16.png")" sizes="16x16">
+    <link rel="manifest" href="@Url.Content("~/_includes/images/icons/manifest.json")">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-TileImage" content="@Url.Content("~/_includes/images/icons/mstile-144x144.png")">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+	<link rel="stylesheet" href="@Url.Content("~/_includes/css/reset.css")" />
+	<link rel="stylesheet" href="@Url.Content("~/_includes/css/main.css")" />
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+	<nav>
+		<a href="~/" class="logo"><h1>Shrunken Head Studios</h1></a>
+
+        <!--Hamburger Reponsive Nav -->
+        <div class="menu-icon">
+          <a href="#menu-expand">MENU</a>
+        </div>
+
+		<ul class="menu">
+		    <li><a href="~/#top">HOME</a></li>
+			<li><a href="~/#about">WHO AM I</a></li>
+			<li><a href="~/#blog">WHAT I'M DOING</a></li>
+		</ul>
+	</nav>
+
+    <!-- Site Content -->
+	<div id="page">
+        @RenderBody()
+	</div>
+
+</body>
+
+<!-- Footer -->
+<footer>
+
+	<p class="copyright">All code, copy and imagery &copy; @DateTime.Now.Year.ToString() Shrunken Head Studios - Please do not reproduce. <br/> Unless it somehow makes me money, in which case, knock yourself out.</p>
+
+	<a class="logo" href="~/"><h1>Shrunken Head Studios</h1></a>
+
+</footer>
+
+<script src="Http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="@Url.Content("~/_includes/scripts/scripts.js")"></script>
+<script src="@Url.Content("~/_includes/scripts/disqus.js")"></script>
+<!-- Admin Script -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js"></script>
+</html>

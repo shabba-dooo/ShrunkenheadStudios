@@ -1,0 +1,286 @@
+h1,h2,h3,h4,h5,h6{
+    font-size:2.5em;
+    border-bottom: 1px solid #656565;
+}
+
+nav{
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	border-bottom: 1px solid #656565;
+	background-color: #000000;
+	height: 60px;
+	position: fixed;
+}
+
+nav .logo{
+	height: 80px;
+	width: 200px;
+	margin: 5px 0px 0px 20px;
+	float:left;
+	display: inline-block;
+	background-image: url("../images/navlogo.png");
+    position: absolute;
+    z-index: 100;
+}
+
+nav .logo h1{
+	display:none;
+}
+
+nav ul{
+	float:right;
+	margin:0 20px;
+}
+
+nav ul li{
+	margin:0 20px;
+	line-height: 60px;
+	float:left;
+}
+
+nav .menu-icon {
+    display: none;
+    float:right;
+    margin: 0 20px;
+    line-height: 60px;
+}
+
+#page{
+	margin-top: 60px;
+	min-height: 100%;
+}
+
+.intro{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100vh;
+}
+
+.intro .logo{
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:115px;
+    display:block;
+}
+
+.separator{
+	height:100vh;
+}
+
+.separator img {
+	height:100vh; 
+	width: 100%;
+}
+
+.about{
+	margin: 0% 18% 0% 18%;
+	min-height: 100vh;
+}
+
+.about .profile-pic{
+	display:block;
+    margin:auto;
+    max-width:100%;
+}
+
+.social{
+    text-align: center;
+}
+
+.social li{
+    display:inline-block;
+    margin-right: 2.5%;
+}
+
+.social li a{
+    display:block;
+    text-indent: -9999em;
+}
+
+.social li a.facebook{
+	background:url("../images/facebook.png") no-repeat center;
+    width: 21px;
+    height: 53px;
+}
+
+.social li a.twitter{
+	background:url("../images/twitter.png") no-repeat center;
+	width: 56px;
+    height: 53px; 
+}
+
+.social li a.linkedin{
+	background:url("../images/linkedin.png") no-repeat center;
+    width: 36px;
+    height: 53px;
+}
+
+.social li a.instagram{
+	background:url("../images/instagram.png") no-repeat center;
+    width: 50px;
+    height: 53px; 
+}
+
+.blog-header {
+    margin: 7% 18% 4% 18%;
+}
+
+.blog-header h2 {
+    text-align: center;
+}
+
+.blog-header p {
+    text-align: center;
+    margin-top: -16px;
+}
+
+.blog-header .old{
+    float:left;
+}
+
+.blog-header .new{
+    float:right;
+}
+
+.blog-post{
+	margin: 0% 18% 0% 18%;
+	min-height: 100vh;
+}
+
+.blog-post h2{
+	text-align: center;
+}
+
+.blog-post .entry-published-date{
+	text-align: center;
+    margin-top: -16px;
+}
+
+.blog-post a.view {
+    float:right;
+}
+
+.blog-post a.previous {
+    float:left;
+}
+
+.tags {
+    margin-top: 2%;
+    text-align: right;
+}
+
+.tags li{
+    display:inline-block;
+    margin-right: 0.5%;
+}
+
+#disqus_thread {
+    margin-top: 4%;
+}
+
+.login {
+    margin: 7% 18% 0% 18%;
+	height: 100vh;
+    text-align:center;
+}
+
+.login form {
+    margin: 7% 0% 0% 0%;
+}
+
+.login form label{ 
+    display: inline-block;
+}
+
+.login span.field-validation-error{ 
+    color: #656565;
+}
+
+.login .validation-summary-errors{ 
+    text-align: center; 
+    color: #656565; 
+}
+
+.error{
+    margin: 7% 18% 0% 18%;
+	height: 100vh;
+}
+
+footer{
+	width: 100%;
+	height: 60px;
+	padding: 10px 0px 0px 0px;
+	margin: 30px 0px 0px 0px;
+	border-top: 1px solid #656565;
+	text-align: center;
+}
+
+footer .copyright{
+	font-size: 0.7em;
+	margin: 0% 18% 0% 18%;
+}
+
+footer .logo {
+	display: inline-block;
+	width: 126px;
+	height: 150px;
+	margin: 0px 30px 0px 0px;
+    background: url("../images/shrunkenhead.png") no-repeat center; 
+}
+
+footer .logo h1 {
+    display: none;
+}
+
+/*Reponsive classes and resets*/
+@media only screen and (max-width: 767px) {
+
+    h2 {
+     font-size: 2em;
+    }
+
+    nav .menu {
+      display:none;
+    }
+
+    nav .menu-open{
+      display:inline-block;
+      text-align: center;
+      width: 100%;
+      max-height: 1000px;
+      float:right;
+      background-color:#000;
+      margin: 0.1% 0 0 0;
+    }
+
+    nav .menu-open li {
+      display: block;
+      width: 100%;
+      border-bottom:1px solid #656565;
+      margin:0;
+    }
+
+    nav .menu-icon {
+       display: inline-block;
+    }
+
+    .blog-header {
+       margin: 26% 5% 4% 5%;
+    }
+
+    .blog-post h2 {
+       margin-left: -18%;
+       margin-right: -18%;
+    }
+
+    .blog-post a.previous {
+       float:none;
+    }
+
+    #disqus_thread {
+       margin-top: 20%;
+    }
+}

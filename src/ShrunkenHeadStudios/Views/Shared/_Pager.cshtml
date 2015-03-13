@@ -1,0 +1,22 @@
+﻿@model ShrunkenHeadStudios.Models.ListViewModel
+
+@* Read current page and total pages *@
+
+@{
+    var currentPage = ViewContext.RequestContext.HttpContext.Request["p"] != null ? int.Parse(ViewContext.RequestContext.HttpContext.Request["p"]) : 1;
+    var totalPages = Math.Ceiling((double)Model.TotalPosts / 3);
+}
+
+@* Check if we need to display pagination links *@
+
+@if (currentPage > 1 || currentPage < totalPages)
+{
+    var p = string.Format("p={0}", currentPage - 1);
+    var n = string.Format("p={0}", currentPage + 1);
+
+    p = String.Concat("?", p);
+    n = String.Concat("?", n);
+    
+    <a href="@p" title="Previous" style="visibility:@(currentPage > 1 ? "visible" : "collapse")" class="old">← Previous</a>
+    <a href="@n" title="Next" style="visibility:@(currentPage < totalPages ? "visible" : "collapse")" class="new">Next →</a>
+}
