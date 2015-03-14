@@ -267,6 +267,11 @@ footer .logo h1 {
        display: inline-block;
     }
 
+    .intro{
+       padding-bottom: 20%;
+       min-height: 0;
+    }
+
     .separator{
 	   height:auto;
     }
