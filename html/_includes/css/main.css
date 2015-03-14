@@ -267,6 +267,15 @@ footer .logo h1 {
        display: inline-block;
     }
 
+    .separator{
+	   height:auto;
+    }
+
+    .separator img {
+	   height:auto; 
+	   max-width: 100%;
+    }
+
     .blog-header {
        margin: 26% 5% 4% 5%;
     }
